@@ -1,0 +1,17 @@
+#thebox {
+  background-color: #688557;
+}
+.blockone {
+  background-color: #71873f;
+}
+.blocktwo {
+  background-color: #a36627;
+}
+.hungry {
+  color: yellow;
+}
+
+header {
+  align-content: center;
+  text-align: center;
+}

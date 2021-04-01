@@ -1,8 +1,8 @@
-<h1>Fowl Burgers!</h1>
+<h1 id="top">Fowl Burgers!</h1>
 
 <h2>Burgers that have not been <span class="hungry">DEVOURED</span> Yet!!</h2>
 
-<ul>
+<ul class="blockone">
     {{#each burgers}}
     {{#unless devoured}}
     {{> burgers/burger-block devoured=true}}
@@ -12,7 +12,7 @@
 
 <h2>Burgers that have been devoured!</h2>
 
-<ul>
+<ul class="blocktwo">
     {{#each burgers}}
     {{#if devoured}}
     {{> burgers/burger-block devoured=false}}
@@ -30,7 +30,7 @@
 
     <div class="form-group">
         <label for="devoured">devoured?</label><br>
-        <input type="radio" name="devoured" value="1" checked> DEVOURED!<br> 
+        <input type="radio" name="devoured" value="1" checked> DEVOURED!<br>
         <input type="radio" name="devoured" value="0"> Uneaten
     </div>
 
